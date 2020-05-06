@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsItem component renders NewsItem 1`] = `
+<section
+  className="NewsItem"
+>
+  <img
+    alt="Microsoft Surface Book 3 and Surface Go 2 launch, and that’s bad news for Apple"
+    src="https://cdn.mos.cms.futurecdn.net/j57b7QnfnaXNpLfXN9ssy-1200-80.jpg"
+  />
+  <div>
+    <a
+      href="https://www.techradar.com/news/microsoft-aims-to-take-on-apple-with-most-powerful-ever-surface-book-3-and-improved-surface-go-2"
+    >
+      Microsoft Surface Book 3 and Surface Go 2 launch, and that’s bad news for Apple
+    </a>
+    <h3>
+      TechRadar
+    </h3>
+    <p>
+      Author: 
+      Darren Allan
+    </p>
+    <p>
+      Date published: 
+      2020-05-06T20:46:23Z
+    </p>
+  </div>
+</section>
+`;
