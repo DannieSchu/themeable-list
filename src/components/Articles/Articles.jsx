@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Article from './Article.jsx';
+import { useArticles } from '../../hooks/NewsProvider.jsx';
 
-const Articles = ({ articles }) => {
+const Articles = () => {
+  const articles = useArticles();
+
   const articleEntries = articles.map((article, i) => (
     <li key={i}>
       <Article {...article} />
@@ -16,16 +18,4 @@ const Articles = ({ articles }) => {
   );
 };
 
-Articles.propTypes = {
-  articles: PropTypes.arrayOf(PropTypes.shape({
-    source: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
-    image: PropTypes.string,
-    date: PropTypes.string.isRequired,
-  })).isRequired
-};
-
 export default Articles;
-
