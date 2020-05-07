@@ -1,0 +1,31 @@
+.Paging {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+
+  button {
+    border-radius: 100%;  
+    padding: 0.5rem 0.6rem;
+    margin: .5rem;
+    text-align: center;
+
+    background-color: skyblue;
+    cursor: pointer;
+    box-shadow: inset 0 0 6px rgb(207, 205, 211);
+
+  }
+  
+  button:active {
+    background-color: rgb(9, 49, 97);
+    color: skyblue;
+    box-shadow: none;
+
+  }
+  
+  button:disabled {
+    background-color: rgb(238, 202, 192);
+
+    cursor: default
+  }
+}
+
