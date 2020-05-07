@@ -10,7 +10,7 @@ const Article = ({ source, author, title, url, image, date }) => {
       <div>
         <a href={url}>{title}</a>
         <h3>{source}</h3>
-        <p>Author: {author}</p>
+        {author && <p>Author: {author}</p>}
         <p>Date published: {date}</p>
       </div>
     </section>
@@ -19,7 +19,7 @@ const Article = ({ source, author, title, url, image, date }) => {
 
 Article.propTypes = {
   source: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
+  author: PropTypes.string,
   title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   image: PropTypes.string,
