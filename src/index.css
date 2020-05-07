@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  color:  rgb(9, 49, 97);
+}
+
+li {
+  list-style-type: none;
+  margin: 2rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
