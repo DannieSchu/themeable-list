@@ -7,18 +7,26 @@ const NewsContext = createContext();
 export const NewsProvider = ({ children }) => {
   const [articles, setArticles] = useState([]);
   const [country, setCountry] = useState('us');
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
-    fetchNews(country, 1)
+    fetchNews(country, page)
       .then(fetchedArticles => setArticles(fetchedArticles));
   }, [country]);
+
+  useEffect(() => {
+    fetchNews(country, page)
+      .then(fetchedArticles => setArticles(fetchedArticles));
+  }, [page]);
 
   const toggle = ({ target }) => {
     target.checked ? setCountry('us') : setCountry('gb');
   };
 
+  const incrementPage = increment => setPage(prevPage => prevPage + increment);
+
   return (
-    <NewsContext.Provider value={{ articles, toggle, country }}>
+    <NewsContext.Provider value={{ articles, toggle, country, incrementPage, page }}>
       {children}
     </NewsContext.Provider>
   );
@@ -41,4 +49,14 @@ export const useToggle = () => {
 export const useCountry = () => {
   const { country } = useContext(NewsContext);
   return country;
+};
+
+export const usePaging = () => {
+  const { incrementPage } = useContext(NewsContext);
+  return incrementPage;
+};
+
+export const usePageNumber = () => {
+  const { page } = useContext(NewsContext);
+  return page;
 };
