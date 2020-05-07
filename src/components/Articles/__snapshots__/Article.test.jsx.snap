@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NewsItem component renders NewsItem 1`] = `
+exports[`Article component renders Article 1`] = `
 <section
-  className="NewsItem"
+  className="Article"
 >
   <img
     alt="Microsoft Surface Book 3 and Surface Go 2 launch, and that’s bad news for Apple"

@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './NewsItem.css';
+import styles from './Article.css';
 
-const NewsItem = ({ source, author, title, url, image, date }) => {
+const Article = ({ source, author, title, url, image, date }) => {
   return (
-    <section className={styles.NewsItem}>
+    <section className={styles.Article}>
       <img src={image} alt={title} />
       <div>
         <a href={url}>{title}</a>
@@ -16,7 +16,7 @@ const NewsItem = ({ source, author, title, url, image, date }) => {
   );
 };
 
-NewsItem.propTypes = {
+Article.propTypes = {
   source: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
@@ -25,5 +25,5 @@ NewsItem.propTypes = {
   date: PropTypes.string.isRequired,
 };
 
-export default NewsItem;
+export default Article;
 

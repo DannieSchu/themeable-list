@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import NewsItem from './NewsItem';
+import Article from './Article';
 
-describe('NewsItem component', () => {
-  it('renders NewsItem', () => {
-    const wrapper = shallow(<NewsItem 
+describe('Article component', () => {
+  it('renders Article', () => {
+    const wrapper = shallow(<Article 
       source="TechRadar"  
       author="Darren Allan" 
       title="Microsoft Surface Book 3 and Surface Go 2 launch, and that’s bad news for Apple"
