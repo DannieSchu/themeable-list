@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './Article.css';
 
 const Article = ({ source, author, title, url, image, date }) => {
+  
   return (
     <section className={styles.Article}>
       <img src={image} alt={title} />
