@@ -1,0 +1,25 @@
+.Articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 2rem;
+
+  a {
+    color: white;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 2rem;
+  }
+}
+
+.us {
+  background-color: skyblue;
+}
+
+.gb {
+  background-color: rgb(235, 143, 135);
+
+}
