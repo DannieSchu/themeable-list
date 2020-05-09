@@ -1,0 +1,23 @@
+.Header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  section:last-child {
+    display: flex;
+  }
+
+  span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+}

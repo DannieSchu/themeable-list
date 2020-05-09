@@ -1,0 +1,30 @@
+.Article {
+  display: flex;
+  width: 60rem;
+
+  a {
+    font-size: 1.4rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+  }
+
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  img {
+    width: 15rem;
+    height: 100%;
+    margin-right: 6rem;
+    margin-top: 0.6rem;
+  }
+}

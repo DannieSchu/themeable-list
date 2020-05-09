@@ -1,0 +1,41 @@
+.Toggle {
+  margin: 0 1.2rem 0 1.2rem;
+
+  input {
+    display: none
+  }
+
+  label {
+    display: block;
+    width: 3rem;
+    height: 1.7rem;
+    border-radius: 1rem;
+    border: 2px solid rgb(243, 209, 209);
+    
+    box-shadow: inset 0 0 6px rgb(192, 161, 161);
+    background-color: rgb(255, 0, 0);
+    
+    cursor: pointer;
+  }
+  
+  label::before {
+    content: '';
+    display: block;
+    border-radius: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+    
+    box-shadow: inset 0 0 4px rgba(212, 205, 205);
+    background-color: rgba(255, 255, 255, 0.931);
+  }
+
+  input:checked + label {
+    border: 2px solid rgb(209, 238, 243);
+
+    background-color: rgb(115, 187, 255);
+
+    &::before {
+      margin-left: 1.2rem;
+    }
+  }
+}
