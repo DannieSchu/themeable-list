@@ -12,12 +12,7 @@ export const NewsProvider = ({ children }) => {
   useEffect(() => {
     fetchNews(country, page)
       .then(fetchedArticles => setArticles(fetchedArticles));
-  }, [country]);
-
-  useEffect(() => {
-    fetchNews(country, page)
-      .then(fetchedArticles => setArticles(fetchedArticles));
-  }, [page]);
+  }, [country, page]);
 
   const toggle = ({ target }) => {
     target.checked ? setCountry('us') : setCountry('gb');
